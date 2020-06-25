@@ -3,14 +3,16 @@
 .header {
   grid-column: 1 / 13;
   display: grid;
+  width: 1872px;
   grid-template-columns: repeat(12, 134px);
   column-gap: 24px;
   height: 980px;
   background-image: url("/assets/header-img.png");
 
   &__nav {
-    grid-column: 1 / 13;
+    grid-column: 2 / 12;
     height: 56px;
+    margin-top: 44px;
   }
 
   &__btn {
@@ -18,7 +20,7 @@
     width: 134px;
     font-family: $inter;
     font-weight: 700;
-    color: #FFF;
+    color: $white;
     background-color: $primary;
     grid-column: 2 / 3;
   }
@@ -27,7 +29,65 @@
     font-family: $inter;
     font-weight: 700;
     font-size: 4rem;
-    color: #FFF;
+    color: $white;
     grid-column: 2 / 8;
+  }
+
+  &__date {
+    font-family: $inter;
+    font-weight: 600;
+    color: $white-opacity;
+    grid-column: 2 / 3;
+  }
+}
+
+.nav {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+
+  &__pages {
+    font-family: $inter;
+    font-weight: 700;
+    color: $white;
+    ul {
+      display: flex;
+      list-style: none;
+    }
+    li {
+      margin-right: 80px;
+    }
+  }
+
+  &__search i {
+    height: 20px;
+    width: 20px;
+  }
+
+  &__social {
+    i {
+      height: 32px;
+      width: 32px;
+    }
+    ul {
+      display: flex;
+      list-style: none;
+    }
+    li {
+      margin-right: 16px;
+    }
+  }
+
+  &__btn {
+    button {
+      height: 57px;
+      width: 154px;
+      border: 1px solid $white;
+      font-family: $inter;
+      font-weight: 800;
+      font-size: 1rem;
+      color: $white;
+      background-color: transparent;
+    }    
   }
 }

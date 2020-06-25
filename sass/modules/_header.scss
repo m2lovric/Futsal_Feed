@@ -1,5 +1,33 @@
+@import 'base';
+
 .header {
   grid-column: 1 / 13;
+  display: grid;
+  grid-template-columns: repeat(12, 134px);
+  column-gap: 24px;
   height: 980px;
-  background-image: url("./assets/header-img.png");
+  background-image: url("/assets/header-img.png");
+
+  &__nav {
+    grid-column: 1 / 13;
+    height: 56px;
+  }
+
+  &__btn {
+    height: 48px;
+    width: 134px;
+    font-family: $inter;
+    font-weight: 700;
+    color: #FFF;
+    background-color: $primary;
+    grid-column: 2 / 3;
+  }
+
+  &__title {
+    font-family: $inter;
+    font-weight: 700;
+    font-size: 4rem;
+    color: #FFF;
+    grid-column: 2 / 8;
+  }
 }

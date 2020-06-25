@@ -1,7 +1,27 @@
 .header {
   grid-column: 1 / 13;
+  display: grid;
+  grid-template-columns: repeat(12, 134px);
+  column-gap: 24px;
   height: 980px;
   background-image: url("/assets/header-img.png"); }
+  .header__nav {
+    grid-column: 1 / 13;
+    height: 56px; }
+  .header__btn {
+    height: 48px;
+    width: 134px;
+    font-family: "Inter", sans-serif;
+    font-weight: 700;
+    color: #FFF;
+    background-color: #DF542E;
+    grid-column: 2 / 3; }
+  .header__title {
+    font-family: "Inter", sans-serif;
+    font-weight: 700;
+    font-size: 4rem;
+    color: #FFF;
+    grid-column: 2 / 8; }
 
 body {
   padding: 0;
@@ -10,5 +30,8 @@ body {
   display: grid;
   grid-template-columns: repeat(12, 134px);
   column-gap: 24px; }
+
+button {
+  border: none; }
 
 /*# sourceMappingURL=index.css.map */

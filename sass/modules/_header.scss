@@ -1,10 +1,9 @@
 @import 'base';
 
 .header {
-  grid-column: 1 / 13;
   display: grid;
-  width: 1872px;
-  grid-template-columns: repeat(12, 134px);
+  max-width: 1920px;
+  grid-template-columns: repeat(12, 1fr);
   column-gap: 24px;
   height: 980px;
   background-image: url("/assets/header-img.png");

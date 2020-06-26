@@ -1,8 +1,7 @@
 .header {
-  grid-column: 1 / 13;
   display: grid;
-  width: 1872px;
-  grid-template-columns: repeat(12, 134px);
+  max-width: 1920px;
+  grid-template-columns: repeat(12, 1fr);
   column-gap: 24px;
   height: 980px;
   background-image: url("/assets/header-img.png"); }
@@ -67,10 +66,9 @@
 body {
   padding: 0;
   margin: 0;
+  border: 0;
   width: 100%;
-  display: grid;
-  grid-template-columns: repeat(12, 134px);
-  column-gap: 24px; }
+  display: flex; }
 
 button {
   border: none; }

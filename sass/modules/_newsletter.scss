@@ -1,0 +1,65 @@
+@import 'base';
+
+.newsletter {
+  height: 560px;
+  max-width: 1920px;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: repeat(4, 140px);
+  column-gap: 24px;
+  align-items: center;
+  background-color: $black;
+  color: $white;
+  font-family: $inter;
+  
+  &__illustration {
+    grid-column: 3 / 5;
+    grid-row: 1 / 4;
+    margin-top: 89px;
+  }
+
+  &__title {
+    grid-column: 5 / 9;
+    font-weight: 800;
+  }
+
+  &__subtitle {
+    grid-column: 5 / 8;
+  }
+
+  &__input {
+    grid-column: 5 / 9;
+    height: 68px;
+    border: 1px solid $primary;
+    color: $white;
+    font-family: $inter;
+    background-color: transparent;
+  }
+
+  &__btn {
+    grid-column: 9 / 11;
+    height: 68px;
+    font-family: $inter;
+    color: $white;
+    background-color: $primary;
+  }
+
+  &__terms {
+    grid-column: 5 / 8;
+    display: flex;
+    align-items: center;
+    font-weight: 400;
+    font-size: 13px;
+    color: $white-opacity;
+
+    input {
+      height: 20px;
+      width: 20px;
+      border: 1px solid $primary;
+    }
+
+    p {
+      margin-left: 18px;
+    }
+  }
+}

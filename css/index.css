@@ -66,6 +66,10 @@
     color: #FFF;
     background-color: transparent; }
 
+.news {
+  height: 1102px;
+  background-color: #FFF; }
+
 .newsletter {
   height: 560px;
   max-width: 1920px;

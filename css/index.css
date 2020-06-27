@@ -28,6 +28,9 @@
     font-weight: 600;
     color: rgba(255, 255, 255, 0.7);
     grid-column: 2 / 3; }
+  .header__dots {
+    grid-column: 11 / 12;
+    justify-self: end; }
 
 .nav {
   display: flex;

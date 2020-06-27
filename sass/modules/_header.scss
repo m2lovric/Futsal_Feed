@@ -38,6 +38,11 @@
     color: $white-opacity;
     grid-column: 2 / 3;
   }
+
+  &__dots {
+    grid-column: 11 / 12;
+    justify-self: end;
+  }
 }
 
 .nav {

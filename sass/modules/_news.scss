@@ -17,15 +17,12 @@
     height: 251px;
     grid-column: 2 / 8;
     border-top: 1px solid $black-opacity;
-    border-bottom: 1px solid $black-opacity;
 
     &--position {
       width: 608px;
       margin: 48px 0;
     }
   }
-
-  &__article:nth-child(1) { border-top: 1px solid $black-opacity; }
 
   &__popular {
     grid-column: 9 / 12;

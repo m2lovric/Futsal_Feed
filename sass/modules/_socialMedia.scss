@@ -1,0 +1,18 @@
+@import 'base';
+
+.socialMedia {
+  @extend %grid-12;
+  height: 676px;
+  background-color: $gray-light;
+
+  &__article { @extend %inter-reg; }
+}
+
+.article {
+  &__img {
+    height: 80px;
+    width: 80px;
+    border-radius: 100%;
+    background-color: $gray;
+  }
+}

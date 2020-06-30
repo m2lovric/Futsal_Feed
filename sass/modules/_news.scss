@@ -3,9 +3,7 @@
 .news {
   height: 1102px;
   background-color: $white;
-  display: grid;
-  grid-template-columns: repeat(12, 1fr);
-  column-gap: 24px;
+  @extend %grid-12;
   font-family: $inter;
 
   &__title {

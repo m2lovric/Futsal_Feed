@@ -6,3 +6,14 @@ $white-2 : rgba(255,255,255,0.2);
 $black: #000;
 $black-opacity: rgba($color: #000, $alpha: 0.2);
 $yellow: #D8A42F;
+
+%grid-12 {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  column-gap: 24px;
+}
+
+%inter-reg {
+  font-family: $inter;
+  font-weight: 400;
+}

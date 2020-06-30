@@ -3,9 +3,7 @@
 .footer {
   height: 640px;
   background-color: $black;
-  display: grid;
-  grid-template-columns: repeat(12, 1fr);
-  column-gap: 24px;
+  @extend %grid-12;
   color: $white;
 
   &__logo {
@@ -15,8 +13,7 @@
 
   &__list {
     list-style: none;
-    font-family: $inter;
-    font-weight: 400;
+    @extend %inter-reg;
     font-size: 14px;
     margin-top: 134px;
 
@@ -34,10 +31,8 @@
   &__links {
     height: 68px;
     grid-column: 1 / 13;
-    display: grid;
-    grid-template-columns: repeat(12, 1fr);
-    column-gap: 24px;
-    font-family: $inter;
+    @extend %grid-12;
+    @extend %inter-reg;
     border-top: 1px solid $white-2;
     border-bottom: 1px solid $white-2;
     align-items: center;
@@ -69,7 +64,7 @@
       align-items: center;
       display: flex;
       i {
-        padding: 0 18px;
+        padding: 14px 18px;
         border-left: 1px solid $white-2;
       }
     }
@@ -77,16 +72,14 @@
 
   &__copy {
     grid-column: 2 / 5;
-    font-family: $inter;
-    font-weight: 400;
+    @extend %inter-reg;
     color: $white-opacity;
   }
 
   &__privacy {
     grid-column: 11 / 12;
     justify-self: end;
-    font-family: $inter;
-    font-weight: 400;
+    @extend %inter-reg;
     color: $white-opacity;
   }
 }

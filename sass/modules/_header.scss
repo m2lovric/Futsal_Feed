@@ -1,12 +1,10 @@
 @import 'base';
 
 .header {
-  display: grid;
+  @extend %grid-12;
   max-width: 1920px;
-  grid-template-columns: repeat(12, 1fr);
-  column-gap: 24px;
   height: 980px;
-  background-image: url("/assets/header-img.png");
+  background-image: url("/assets/header/header-img.png");
 
   &__nav {
     grid-column: 2 / 12;

@@ -7,8 +7,10 @@
   background-image: url("/assets/header/header-img.png");
 
   &__nav {
-    grid-column: 2 / 12;
+    grid-column: 1 / 13;
     height: 56px;
+    @extend %grid-12;
+    align-items: center;
     margin-top: 44px;
   }
 
@@ -23,11 +25,13 @@
   }
 
   &__title {
+    grid-column: 2 / 8;
+    margin: 0;
     font-family: $inter;
     font-weight: 700;
     font-size: 4rem;
     color: $white;
-    grid-column: 2 / 8;
+    
   }
 
   &__date {
@@ -39,19 +43,23 @@
 
   &__dots {
     grid-column: 11 / 12;
+    grid-row: 3 / 4;
     justify-self: end;
+    align-self: center;
   }
 }
 
 .nav {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
+  &__logo {
+    grid-column: 2 / 4;
+  }
 
   &__pages {
+    grid-column: 4 / 8;
     font-family: $inter;
     font-weight: 700;
     color: $white;
+
     ul {
       display: flex;
       list-style: none;
@@ -62,11 +70,18 @@
   }
 
   &__search i {
+    grid-column: 8 / 9;
+    justify-self: end;
     height: 20px;
     width: 20px;
   }
 
   &__social {
+    grid-column: 9 / 11;
+    width: 176px;
+    padding: 0 42px;
+    border-left: 1px solid $white;
+    border-right: 1px solid $white;
     i {
       height: 32px;
       width: 32px;
@@ -81,6 +96,7 @@
   }
 
   &__btn {
+    grid-column: 11 / 12;
     button {
       height: 57px;
       width: 154px;

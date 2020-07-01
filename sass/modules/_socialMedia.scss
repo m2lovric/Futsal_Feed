@@ -4,6 +4,7 @@
   @extend %grid-12;
   height: 676px;
   background-color: $gray-light;
+  overflow: hidden;
 
   &__article { 
     height: 350px;
@@ -13,6 +14,7 @@
   &__article:nth-child(2){ grid-column: 2 / 5;}
   &__article:nth-child(3){ grid-column: 5 / 8;}
   &__article:nth-child(4){ grid-column: 8 / 11;}
+  &__article:nth-child(5){ grid-column: 11 / 13;}
 
   &__links {
     height: 70px;
@@ -20,9 +22,25 @@
     @extend %grid-12;
     font-family: $inter;
     font-weight: 800;
+    border-top: 1px solid $black-opacity;
+    border-bottom: 1px solid $black-opacity;
+    justify-content: center;
+
+    a {
+      width: 134px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      h3 {
+        font-size: 14px;
+      }
+    }
 
     a:first-child {
       grid-column: 2 / 3;
+      background-color: $black;
+      color: $white;
     }
   }
 }

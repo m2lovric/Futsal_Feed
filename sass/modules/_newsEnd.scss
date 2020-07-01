@@ -1,6 +1,9 @@
 @import 'base';
 
 .newsEnd {
-  height: 500px;
-  background-color: white;
+  height: 1668px;
+  background-color: $white;
+  @extend %grid-12;
+  grid-template-rows: 1fr 252px 1fr repeat(2, 252px) 1fr 1fr;
+  font-family: $inter;
 }

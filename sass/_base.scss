@@ -8,10 +8,17 @@ $black-opacity: rgba($color: #000, $alpha: 0.2);
 $yellow: #D8A42F;
 $gray: #D8D8D8;
 $gray-light: #F4F4F4; 
+$black16-5: rgba(16,16,16,0.5);
 
 %grid-12 {
   display: grid;
   grid-template-columns: repeat(12, 1fr);
+  column-gap: 24px;
+}
+
+%grid-6 {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
   column-gap: 24px;
 }
 

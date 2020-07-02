@@ -26,6 +26,16 @@
     border-bottom: 1px solid $black-opacity;
     justify-content: center;
 
+    &--arrows {
+      grid-column: 10 / 12;
+      align-self: center;
+      justify-self: end;
+      img {
+        padding: 23px 24px;
+        border-left: 1px solid $black-opacity;
+      }
+    }
+
     a {
       width: 134px;
       display: flex;

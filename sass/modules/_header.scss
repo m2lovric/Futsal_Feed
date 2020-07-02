@@ -61,9 +61,19 @@
     font-weight: 700;
     color: $white;
 
+    &--original {
+      position: absolute;
+      width: 161px;
+      top: 10px;
+      left: -14px;
+      border-top: 2px solid $primary;
+      align-self: center;
+    }
+
     ul {
       display: flex;
       list-style: none;
+      li:nth-child(2){ position: relative;}
     }
     li {
       margin-right: 80px;

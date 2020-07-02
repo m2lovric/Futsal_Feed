@@ -22,6 +22,12 @@ $black16-5: rgba(16, 16, 16, 0.5);
   column-gap: 24px;
 }
 
+%grid-3 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 24px;
+}
+
 %inter-reg {
   font-family: $inter;
   font-weight: 400;

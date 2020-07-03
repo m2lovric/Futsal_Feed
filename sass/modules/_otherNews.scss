@@ -4,7 +4,7 @@
   height: 1875px;
   background-color: $white;
   @extend %grid-12;
-  grid-template-rows: repeat(7, 1fr);
+  grid-template-rows: repeat(8, 1fr);
   font-family: $inter;
 
   &__article {
@@ -29,7 +29,6 @@
     grid-column: 9 / 12;
     grid-row: 3 / 5;
     @extend %grid-3;
-    grid-template-rows: 1fr repeat(1fr, 11);
   }
 }
 
@@ -44,5 +43,11 @@
 
   &__date {
     grid-column: 3 / 4;
+  }
+
+  div {
+    height: 16px;
+    width: 28px;
+    background-color: $gray;
   }
 }

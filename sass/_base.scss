@@ -10,6 +10,36 @@ $gray: #D8D8D8;
 $gray-light: #F4F4F4; 
 $black16-5: rgba(16, 16, 16, 0.5);
 
+%inter-reg {
+  font-family: $inter;
+  font-weight: 400;
+}
+
+%inter-med {
+  font-family: $inter;
+  font-weight: 500;
+}
+
+%inter-semibold {
+  font-family: $inter;
+  font-weight: 600;
+}
+
+%inter-bold {
+  font-family: $inter;
+  font-weight: 700;
+}
+
+%inter-extrabold {
+  font-family: $inter;
+  font-weight: 800;
+}
+
+%inter-400 {
+  font-family: $inter;
+  font-weight: 400;
+}
+
 %grid-12 {
   display: grid;
   grid-template-columns: repeat(12, 1fr);

@@ -1,12 +1,14 @@
 @import 'base';
 
 .newsEnd {
-  height: 1668px;
+  height: 1700px;
   background-color: $white;
   @extend %grid-12;
   grid-template-rows: repeat(7, 1fr);
   font-family: $inter;
 
+  &__article:first-child{ margin-top: 10%;}
+  &__article:nth-child(5){ border-bottom: 1px solid $black-opacity; }
   &__article {
     min-height: 252px;
     grid-column: 2 / 8;
@@ -18,6 +20,7 @@
     grid-column: 2 / 4;
     grid-row: 7 / 8;
     color: $primary;
+    margin-bottom: 30%;
   }
 }
 

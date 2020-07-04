@@ -8,6 +8,7 @@
   grid-template-rows: repeat(8, 1fr);
   font-family: $inter;
 
+  &__article:nth-child(6){ border-bottom: 1px solid $black-opacity; }
   &__article {
     min-height: 252px;
     grid-column: 2 / 8;
@@ -32,6 +33,7 @@
     h4 { 
       grid-column: 1 / 4;
       font-size: 1.2rem;
+      margin-top: 0;
       @extend %inter-extrabold;
     }
     article { grid-column: 1 / 4;}
@@ -40,17 +42,21 @@
       color: $black16-5;
       @extend %inter-extrabold;
       font-size: 0.9rem;
+      text-align: start;
+      display: inline-block;
     }
 
     &--date {
       color: $primary;
       @extend %inter-extrabold;
       font-size: 0.9rem;
+      text-align: left;
     }
 
     &--title {
       line-height: 1.5;
       font-size: 1.25rem;
+      text-align: center;
     }
   }
 
@@ -58,6 +64,10 @@
     grid-column: 9 / 12;
     grid-row: 3 / 5;
     @extend %grid-3;
+
+    article:last-child {
+      text-align: end;
+    }
   }
 }
 
@@ -68,11 +78,6 @@
 }
 
 .ranking {
-
-  article:last-child {
-    grid-column: 3 / 4;
-    justify-items: end;
-  }
 
   h6 {
     @extend %inter-extrabold;

@@ -5,6 +5,7 @@
   max-width: 1920px;
   height: 980px;
   background-image: url("/assets/header/header-img.png");
+  grid-template-rows: repeat(4, 1fr);
 
   &__nav {
     grid-column: 1 / 13;
@@ -17,15 +18,19 @@
   &__btn {
     height: 48px;
     width: 134px;
-    align-self: center;
+    align-self: start;
     @extend %inter-bold;
     color: $white;
     background-color: $primary;
     grid-column: 2 / 3;
+    grid-row: 2 / 3;
+    align-self: start;
   }
 
   &__title {
     grid-column: 2 / 8;
+    grid-row: 2 / 4;
+    align-self: center;
     margin: 0;
     @extend %inter-bold;
     font-size: 4rem;
@@ -37,11 +42,13 @@
     @extend %inter-semibold;
     color: $white-opacity;
     grid-column: 2 / 3;
+    grid-row: 3 / 4;
+    align-self: end;
   }
 
   &__dots {
     grid-column: 11 / 12;
-    grid-row: 3 / 4;
+    grid-row: 2 / 4;
     justify-self: end;
     align-self: center;
   }

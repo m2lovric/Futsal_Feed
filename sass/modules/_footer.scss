@@ -67,6 +67,10 @@
         padding: 14px 18px;
         border-left: 1px solid $white-2;
       }
+
+      i:last-child {
+        border-right: 1px solid $white-2;
+      }
     }
   }
 

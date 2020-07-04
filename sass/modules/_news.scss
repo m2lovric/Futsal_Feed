@@ -24,7 +24,7 @@
   &__popular {
     grid-column: 9 / 12;
     grid-row: 1 / 4;
-    align-self: start;
+    align-self: center;
 
     &--number {
       color: $black16-5;
@@ -44,11 +44,15 @@
 
 .article {
   button {
-    @extend .header__btn;
     height: 44px;
+    width: 134px;
     grid-column: 1 / 2;
     align-self: end;
+    @extend %inter-bold;
+    color: $white;
+    background-color: $primary;
   }
+
   &__title {
     font-size: 2rem;
     grid-column: 1 / 5;

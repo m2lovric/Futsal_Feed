@@ -33,10 +33,14 @@
   font-family: "Inter", sans-serif;
   font-weight: 400; }
 
+.header__container {
+  width: 100%;
+  background-image: url("/assets/header/header-img.png"); }
+
 .header {
+  margin: 0 auto;
   max-width: 1920px;
   height: 980px;
-  background-image: url("/assets/header/header-img.png");
   grid-template-rows: repeat(4, 1fr); }
   .header__nav {
     grid-column: 1 / 13;
@@ -189,10 +193,14 @@
   font-family: "Inter", sans-serif;
   font-weight: 400; }
 
+.header__container {
+  width: 100%;
+  background-image: url("/assets/header/header-img.png"); }
+
 .header {
+  margin: 0 auto;
   max-width: 1920px;
   height: 980px;
-  background-image: url("/assets/header/header-img.png");
   grid-template-rows: repeat(4, 1fr); }
   .header__nav {
     grid-column: 1 / 13;
@@ -274,9 +282,14 @@
     font-size: 1rem;
     color: #FFF;
     background-color: transparent; }
+
+.news__container {
+  width: 100%; }
 
 .news {
   height: 1102px;
+  max-width: 1920px;
+  margin: 0 auto;
   background-color: #FFF;
   grid-template-rows: 1fr repeat(2, 252px) 1fr 1fr;
   font-family: "Inter", sans-serif; }
@@ -364,9 +377,14 @@
   font-family: "Inter", sans-serif;
   font-weight: 400; }
 
+.newsletter__container {
+  width: 100%;
+  background-color: #000; }
+
 .newsletter {
   height: 560px;
   max-width: 1920px;
+  margin: 0 auto;
   grid-template-rows: repeat(4, 140px);
   align-items: center;
   background-color: #000;
@@ -409,11 +427,20 @@
     color: rgba(255, 255, 255, 0.7); }
     .newsletter__terms input {
       height: 20px;
-      width: 20px;
+      width: 20px; }
+    .newsletter__terms input:before {
+      display: inline-block;
+      width: 15px;
+      height: 15px;
+      content: "\2714";
+      padding-bottom: 5px;
+      padding-left: 5px;
       border: 1px solid #DF542E;
-      background-color: black; }
+      border-radius: 2px;
+      background-color: #000;
+      transition: .2; }
     .newsletter__terms input:checked {
-      border: 1px solid #DF542E; }
+      color: #FFF; }
     .newsletter__terms p {
       margin: 5px 0 0 18px; }
 
@@ -452,9 +479,13 @@
   font-family: "Inter", sans-serif;
   font-weight: 400; }
 
+.otherNews__container {
+  width: 100%; }
+
 .otherNews {
   height: 1875px;
-  margin-top: 16vh;
+  max-width: 1920px;
+  margin: 16vh auto 0 auto;
   background-color: #FFF;
   grid-template-rows: repeat(8, 1fr);
   font-family: "Inter", sans-serif; }
@@ -566,7 +597,13 @@
   font-family: "Inter", sans-serif;
   font-weight: 400; }
 
+.socialMedia__container {
+  width: 100%;
+  background-color: #F4F4F4; }
+
 .socialMedia {
+  max-width: 1920px;
+  margin: 0 auto;
   height: 676px;
   background-color: #F4F4F4;
   overflow: hidden; }
@@ -676,6 +713,8 @@
 
 .newsEnd {
   height: 1700px;
+  max-width: 1920px;
+  margin: 0 auto;
   background-color: #FFF;
   grid-template-rows: repeat(7, 1fr);
   font-family: "Inter", sans-serif; }
@@ -736,8 +775,14 @@
   font-family: "Inter", sans-serif;
   font-weight: 400; }
 
+.footer__container {
+  width: 100%;
+  background-color: #000; }
+
 .footer {
   height: 640px;
+  max-width: 1920px;
+  margin: 0 auto;
   background-color: #000;
   color: #FFF; }
   .footer__logo {
@@ -801,7 +846,6 @@ body {
   margin: 0 auto;
   border: 0;
   width: 100%;
-  max-width: 1920px;
   display: flex;
   flex-direction: column; }
 

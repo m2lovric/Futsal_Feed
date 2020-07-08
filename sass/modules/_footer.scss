@@ -1,7 +1,14 @@
 @import 'base';
 
+.footer__container {
+  width: 100%;
+  background-color: $black;
+}
+
 .footer {
   height: 640px;
+  max-width: 1920px;
+  margin: 0 auto;
   background-color: $black;
   @extend %grid-12;
   color: $white;

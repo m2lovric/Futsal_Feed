@@ -1,8 +1,14 @@
 @import 'base';
 @import 'header';
 
+.news__container {
+  width: 100%;
+}
+
 .news {
   height: 1102px;
+  max-width: 1920px;
+  margin: 0 auto;
   background-color: $white;
   @extend %grid-12;
   grid-template-rows: 1fr repeat(2, 252px) 1fr 1fr;

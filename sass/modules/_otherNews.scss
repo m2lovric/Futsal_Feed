@@ -1,8 +1,13 @@
 @import 'base';
 
+.otherNews__container{
+  width: 100%;
+}
+
 .otherNews {
   height: 1875px;
-  margin-top: 16vh;
+  max-width: 1920px;
+  margin: 16vh auto 0 auto;
   background-color: $white;
   @extend %grid-12;
   grid-template-rows: repeat(8, 1fr);

@@ -1,6 +1,12 @@
 @import 'base';
 
+.socialMedia__container {
+  width: 100%;
+  background-color: $gray-light;
+}
 .socialMedia {
+  max-width: 1920px;
+  margin: 0 auto;
   @extend %grid-12;
   height: 676px;
   background-color: $gray-light;

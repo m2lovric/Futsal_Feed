@@ -64,14 +64,24 @@
     input {
       height: 20px;
       width: 20px;
+    }
+
+    input:before {
+      display: inline-block;
+      width: 15px;
+      height: 15px;
+      content: "\2714";
+      padding-bottom: 5px;
+      padding-left: 5px;
       border: 1px solid $primary;
-      background-color: black;
+      border-radius: 2px;
+      background-color: $black;
+      transition: .2;
     }
 
     input:checked {
-      border: 1px solid $primary;
+      color: $white;
     }
-
     p {
       margin: 5px 0 0 18px;
     }

@@ -3,6 +3,7 @@
 .footer__container {
   width: 100%;
   background-color: $black;
+  overflow-x: hidden;
 }
 
 .footer {
@@ -38,8 +39,11 @@
   &__links {
     height: 68px;
     grid-column: 1 / 13;
+    width: 1920px;
     @extend %grid-12;
     @extend %inter-reg;
+    padding: 0 100%;
+    margin-left: -100%;
     border-top: 1px solid $white-2;
     border-bottom: 1px solid $white-2;
     align-items: center;

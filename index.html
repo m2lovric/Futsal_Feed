@@ -7,6 +7,7 @@
 
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   <link rel="stylesheet" href="css/index.css">
 </head>
 <body>
@@ -75,7 +76,7 @@
       </div>
       <img src="./assets/Bitmap.png" alt="picture">
     </article>
-    <aside class="news__popular">
+    <aside class="news__popular" data-aos="fade-down-left" data-aos-duration="500">
       <h3>MOST POPULAR <span>ORIGINAL</span> CONTENT</h3>
       <article>
         <p class="news__popular--number">01</p>
@@ -171,7 +172,7 @@
         <img src="./assets/Bitmap.png" alt="picture">
       </article>
 
-      <section class="otherNews__upcoming">
+      <section class="otherNews__upcoming" data-aos="fade-down-left" data-aos-duration="500">
         <h4>UPCOMING EVENTS</h4>
         <article>
           <p class="otherNews__upcoming--id">01</p>
@@ -189,7 +190,7 @@
           <p class="otherNews__upcoming--title">FutsalisHere - Global Futsal Congress</p>
         </article>
       </section>
-      <section class="otherNews__ranking ranking">
+      <section class="otherNews__ranking ranking" data-aos="fade-up" data-aos-duration="500">
         <h4 class="ranking__title">CURRENT RANKING</h4>
         <h4 class="ranking__date">MAY 4, 2020</h4>
         <div class="ranking__line"></div>
@@ -364,5 +365,9 @@
       <p class="footer__privacy">Privacy Policy</p>
     </footer>
   </div>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
 </body>
 </html>
